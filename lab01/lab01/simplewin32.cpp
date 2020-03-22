@@ -129,14 +129,14 @@ void process (unsigned char *ig, long w, long h)
 
 	for (y = 0; y < h/2; y ++)
 		for (x = 0; x < w/2; x ++) {
-			ig [3*(x + y*w) + 0] = 255;
+			ig [3*(x + y*w) + 0] = 255-x;
 			ig [3*(x + y*w) + 1] = 128;
 			ig [3*(x + y*w) + 2] = 0;
 		}
 
 	for (y = 0; y < h / 2; y++)
 		for (x = w/2; x < w; x++) {
-			ig[3 * (x + y * w) + 0] = 255;
+			ig[3 * (x + y * w) + 0] = 255-y;
 			ig[3 * (x + y * w) + 1] = 0;
 			ig[3 * (x + y * w) + 2] = 128;
 		}
@@ -144,7 +144,7 @@ void process (unsigned char *ig, long w, long h)
 	for (y = h / 2; y < h ; y++)
 		for (x = 0; x < w / 2; x++) {
 			ig[3 * (x + y * w) + 0] = 0;
-			ig[3 * (x + y * w) + 1] = 255;
+			ig[3 * (x + y * w) + 1] = 255-y;
 			ig[3 * (x + y * w) + 2] = 128;
 		}
 
@@ -152,7 +152,7 @@ void process (unsigned char *ig, long w, long h)
 		for (x = w / 2; x < w; x++) {
 			ig[3 * (x + y * w) + 0] = 128;
 			ig[3 * (x + y * w) + 1] = 0;
-			ig[3 * (x + y * w) + 2] = 255;
+			ig[3 * (x + y * w) + 2] = 255 - x - (w / 2);
 		}
 
 //	lineDDA (5, 6, 120, 80);	// x1, y1, x2, y2
