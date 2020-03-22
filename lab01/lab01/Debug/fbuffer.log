@@ -4,5 +4,6 @@ C:\Users\Khanisorn\Desktop\lab01\lab01\simplewin32.cpp(116,21): warning C4101:  
 C:\Users\Khanisorn\Desktop\lab01\lab01\simplewin32.cpp(116,10): warning C4101:  'dy': unreferenced local variable
 C:\Users\Khanisorn\Desktop\lab01\lab01\simplewin32.cpp(116,14): warning C4101:  'steps': unreferenced local variable
 C:\Users\Khanisorn\Desktop\lab01\lab01\simplewin32.cpp(116,6): warning C4101:  'dx': unreferenced local variable
+C:\Users\Khanisorn\Desktop\lab01\lab01\simplewin32.cpp(155,38): warning C4244:  '=': conversion from 'long' to 'unsigned char', possible loss of data
 C:\Users\Khanisorn\Desktop\lab01\lab01\simplewin32.cpp(122,12): warning C4101:  'k': unreferenced local variable
   fbuffer.vcxproj -> C:\Users\Khanisorn\Desktop\lab01\lab01\Debug\fbuffer.exe
